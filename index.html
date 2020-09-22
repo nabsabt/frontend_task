@@ -8,6 +8,9 @@
     </head>
     <header>
         <img id="icon_1" src="../matritel_logo.gif">
+        <!--LOGIN Div
+        -contains the Home Icon, Username and DropDown control panel-
+        -->
         <div id="login">
             <img  id="icon_home" src="../home_icon.gif">
             <p id="userName">Username</p>
@@ -22,10 +25,19 @@
         </div>
     </header>
     <body>
+      <!--NAVIGATION Div
+        -it's side bar on the left side, with the changeable values (link)
+        -in it. The hide-show action is triggered by JS functions.
+        -The Default CSS value is "display: none; for each sub-div"
+        -->
         <div id="navigation">
             <h3>Navigation List</h3>
             <p>Please, select an option →</p>
 
+            <!--
+              -The Div is referred by ElementID in JS code. 
+              -The links are hardcoded, refering to the homepage.
+            -->
             <div class="navigation_div" id="management_div">
               <ul style= "list-style-type: none; padding-inline-start: 0;">
                 <a href="index.html"><li>Product Management</li></a>
@@ -34,6 +46,10 @@
               </ul>
             </div>
 
+            <!--
+              -The Div is referred by ElementID in JS code. 
+              -The links are hardcoded, refering to the homepage.
+            -->
             <div class="navigation_div" id="FTP_eng_spec">
               <ul style= "list-style-type: none; padding-inline-start: 0;">
                 <a href="index.html"><li>Hardware status</li></a>
@@ -43,6 +59,10 @@
               </ul>
             </div>
 
+            <!--
+              -The Div is referred by ElementID in JS code. 
+              -The links are hardcoded, refering to the homepage.
+            -->
             <div class="navigation_div" id="allocation_eng_spec">
               <ul style= "list-style-type: none; padding-inline-start: 0;">
                 <a href="index.html"><li>Subscription interface</li></a>
@@ -53,7 +73,11 @@
 
         </div>
         <div id="menu">
-
+            <!--
+              -This Div contains the main controllers.
+              -All the sub-divs consist of a logo image and a paragraph.
+              -Every sub-div behaves as link, with an onclick event, calling a JS function
+            -->
             <div class="management" style="cursor: pointer;" onclick="managementOn(); FTPEngineOff();allocationOff(); ">
               <img id="relational_icon" src="../relational_icon.gif">
               <p class="menu_paragraphs"> Dimensional management</p>
