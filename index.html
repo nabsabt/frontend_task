@@ -1,0 +1,80 @@
+﻿<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet"/>
+        <title>First Assignment</title>
+    </head>
+    <header>
+        <img id="icon_1" src="../matritel_logo.gif">
+        <div id="login">
+            <img  id="icon_home" src="../home_icon.gif">
+            <p id="userName">Username</p>
+            <select name="root_dropdown" id="root_dropdown">
+                <option value="" disabled selected hidden>--Options--</option>
+                <option value="preferences">&#xf0ad; Preferences</option>
+                <option value="about">&#xf289; About </option>
+                <option value="change_password">&#xf09c; Change Password</option>
+                <option value="user_management">&#xf0c0; User Management</option>
+                <option value="logout">&#xf011; Log out </option>
+              </select>
+        </div>
+    </header>
+    <body>
+        <div id="navigation">
+            <h3>Navigation List</h3>
+            <p>Please, select an option →</p>
+
+            <div class="navigation_div" id="management_div">
+              <ul style= "list-style-type: none; padding-inline-start: 0;">
+                <a href="index.html"><li>Product Management</li></a>
+                <a href="index.html"><li>Delay & Schedule</li></a>
+                <a href="index.html"><li>Personal Tasks</li></a>
+              </ul>
+            </div>
+
+            <div class="navigation_div" id="FTP_eng_spec">
+              <ul style= "list-style-type: none; padding-inline-start: 0;">
+                <a href="index.html"><li>Hardware status</li></a>
+                <a href="index.html"><li>Network specification</li></a>
+                <a href="index.html"><li>Subfolder status</li></a>
+                <a href="index.html"><li>User permission</li></a>
+              </ul>
+            </div>
+
+            <div class="navigation_div" id="allocation_eng_spec">
+              <ul style= "list-style-type: none; padding-inline-start: 0;">
+                <a href="index.html"><li>Subscription interface</li></a>
+                <a href="index.html"><li>Service Interface</li></a>
+                <a href="index.html"><li>OSS Interface</li></a>
+              </ul>
+            </div>
+
+        </div>
+        <div id="menu">
+
+            <div class="management" style="cursor: pointer;" onclick="managementOn(); FTPEngineOff();allocationOff(); ">
+              <img id="relational_icon" src="../relational_icon.gif">
+              <p class="menu_paragraphs"> Dimensional management</p>
+            </div>
+
+            <div class="management" style="cursor: pointer;" onclick="FTPEngineOn(); managementOff();allocationOff();">
+              <img id="piechart_logo" src="../piechart_icon.gif">
+              <p class="menu_paragraphs">FTP Engine Specification</p>
+            </div>
+
+            <div class="management" style="cursor: pointer;" onclick="allocationOn(); managementOff();FTPEngineOff();">
+              <img id="puzzle_icon" src="../puzzle_icon.gif">
+              <p class="menu_paragraphs">Allocation engine Specification</p>
+            </div>
+        </div>
+        
+    </body>
+
+
+
+</html>
+<footer>
+    
+</footer>
